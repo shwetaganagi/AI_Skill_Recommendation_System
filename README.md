@@ -90,8 +90,6 @@ ML_PROJECT/
 ├── tests/
 └── README.md
 
-⸻
-
 ⚙️ Tech Stack
 
 Frontend
