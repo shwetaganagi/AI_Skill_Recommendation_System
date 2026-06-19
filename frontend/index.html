@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Career Recommendation System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/6b6d5e4f0e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="background-blur"></div>
+
+    <div class="app-container">
+
+        <div class="left-panel">
+            <h1>AI Career Advisor</h1>
+            <p>
+                Discover your ideal career path using Machine Learning,
+                skill analysis, and intelligent recommendations.
+            </p>
+
+            <div class="feature-cards">
+                <div class="feature-card">
+                    <h3>Smart Prediction</h3>
+                    <p>Get AI-powered career recommendations instantly.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Top 3 Career Matches</h3>
+                    <p>Explore multiple relevant career opportunities.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Skill Gap Analysis</h3>
+                    <p>Know exactly what skills you need to improve.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-panel">
+            <h2>Career Assessment</h2>
+
+            <div class="form-group">
+                <label>Skills</label>
+                <input
+                    type="text"
+                    id="skills"
+                    placeholder="python, sql, machine learning, tensorflow"
+                >
+            </div>
+
+            <div class="form-group">
+                <label>Education</label>
+                <select id="education">
+                    <option value="BTech CSE">BTech CSE</option>
+                    <option value="BTech IT">BTech IT</option>
+                    <option value="BCA">BCA</option>
+                    <option value="MCA">MCA</option>
+                    <option value="MBA">MBA</option>
+                    <option value="BSc Statistics">BSc Statistics</option>
+                    <option value="MSc Data Science">MSc Data Science</option>
+                    <option value="MTech AI">MTech AI</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Interests</label>
+                <input
+                    type="text"
+                    id="interests"
+                    placeholder="ai, analytics, research"
+                >
+            </div>
+
+            <div class="form-group">
+                <label>Experience (Years)</label>
+                <input
+                    type="number"
+                    id="experience"
+                    placeholder="2"
+                >
+            </div>
+
+            <div class="form-group">
+    <label>Upload Resume (PDF)</label>
+    <input
+        type="file"
+        id="resumeFile"
+        accept=".pdf"
+    >
+</div>
+
+<button onclick="uploadResume()">
+    Upload Resume & Analyze
+</button>
+
+            <button onclick="recommendCareer()">
+                Recommend My Career
+            </button>
+
+            <div id="result" class="result-box"></div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #020024 0%, #090979 45%, #1f3c88 100%);
+    padding: 30px;
+    color: white;
+}
+
+.results-container {
+    max-width: 1400px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 28px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 35px;
+    color: white;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.hero-card {
+    padding: 35px;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.10);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.career-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: white;
+}
+
+.card-grid {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    min-width: 250px;
+    padding: 30px;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.10);
+    text-align: center;
+}
+
+.card h3 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.card p {
+    font-size: 1.3rem;
+    color: #d9e7ff;
+}
+
+.badge {
+    display: inline-block;
+    padding: 12px 18px;
+    margin: 8px;
+    border-radius: 999px;
+    background: rgba(79, 140, 255, 0.25);
+    border: 1px solid rgba(79, 140, 255, 0.45);
+    color: white;
+    font-weight: 600;
+}
+
+section {
+    margin-top: 40px;
+}
+
+ol {
+    padding-left: 25px;
+}
+
+ol li {
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+button {
+    width: 100%;
+    padding: 18px;
+    border: none;
+    border-radius: 18px;
+    background: linear-gradient(90deg, #4f8cff, #2f6df5);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .card-grid {
+        flex-direction: column;
+    }
+
+    .career-title {
+        font-size: 2rem;
+    }
+}
