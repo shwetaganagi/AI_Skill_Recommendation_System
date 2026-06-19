@@ -66,17 +66,21 @@ ML_PROJECT/
 │   ├── style.css
 │   └── results.css
 │
+├── chatbot/
+│   └── career_chatbot.py
+│
+├── resume_parser/
+│   ├── parser.py
+│   └── skill_extractor.py
+│
 ├── src/
 │   └── models/
 │       ├── predict.py
 │       ├── train_model.py
 │       └── evaluate.py
 │
-├── resume_parser/
-│   ├── parser.py
-│   └── skill_extractor.py
-│
 ├── models/
+│   ├── career_model.pkl
 │   ├── random_forest_model.pkl
 │   ├── svm_model.pkl
 │   ├── logistic_model.pkl
@@ -88,7 +92,15 @@ ML_PROJECT/
 ├── data/
 ├── notebooks/
 ├── tests/
-└── README.md
+├── screenshots/
+│   ├── home_page.png
+│   └── results.png
+│
+├── sample_resume.pdf
+├── README.md
+└── .gitignore
+
+⸻
 
 ⚙️ Tech Stack
 
